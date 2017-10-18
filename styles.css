@@ -1,18 +1,22 @@
 body, html{
   height:100%;
+  overflow:hidden;
 }
 body{
+  font-family: sans-serif;
   margin: 0px;
   background-color:#444;
   font-size: 18px;
-  background-image:url('./hotlinebling.png');
+  background-image:url('http://www.petrusentertainment.net/archive/90ssitcomlivingrooms/images/sl6.jpg');
   background-position: center;
   background-repeat: no-repeat;
+  
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
+  text-decoration: none;
 }
-.title, .addDancerButton{
+.title, .addDancerButton, .lineupButton, .jumpButton{
   padding:5px 12px;
   float:right;
 }
@@ -27,4 +31,69 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);   
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes flipping {
+    from {-webkit-transform: scale(1, 1);}
+    to {-webkit-transform: scale(-1, 1);}
+}
+
+.rotating {
+  -webkit-animation: rotating 0.5s linear infinite;
+}
+
+
+
+.carlton {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(https://i.giphy.com/media/qQPISdaKEdxK0/giphy.webp) no-repeat;
+  background-size: 298px;
+  width: 298px; /* Width of new image */
+  height: 177px; /* Height of new image */
+  padding-left: 298px; /* Equal to width of new image */
+}
+
+.carlton.jump {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(https://files.slack.com/files-pri/T7CPGS090-F7KRWFM6W/carlton.png) no-repeat;
+  background-size: 240px;
+  width: 240px; /* Width of new image */
+  height: 160px; /* Height of new image */
+  padding-left: 240px; /* Equal to width of new image */
+  -webkit-animation: flipping 0.5s linear infinite;
+}
+
+.will {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(https://files.slack.com/files-pri/T7CPGS090-F7LUJNRN3/dancing_will.png) no-repeat;
+  background-size: 240px;
+  width: 240px; /* Width of new image */
+  height: 160px; /* Height of new image */
+  padding-left: 240px; /* Equal to width of new image */
+}
+
+.will.jump{
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(https://files.slack.com/files-pri/T7CPGS090-F7KR7LLDQ/will_smith.png) no-repeat;
+  background-size: 240px;
+  width: 240px; /* Width of new image */
+  height: 160px; /* Height of new image */
+  padding-left: 240px; /* Equal to width of new image */
 }

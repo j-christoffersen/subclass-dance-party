@@ -33,6 +33,18 @@ class Dancer {
       left: left
     };
     this.$node.css(styleSettings);
+    this.top = top;
+    this.left = left;
+  }
+  
+  moveTo(top, left) {
+    var styleSettings = {
+      top: top,
+      left: left
+    };
+    this.$node.animate(styleSettings);
+    this.top = top;
+    this.left = left;
   }
   
   static dist(dancer1, dancer2) {
